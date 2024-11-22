@@ -1,0 +1,138 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    padding: 20px;
+    background-image: url('images/nature-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#app {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #2c3e50;
+    font-size: 2em;
+}
+
+header p {
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#location-info {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#status {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #2c3e50;
+}
+
+#alert {
+    padding: 20px;
+    background-color: #f39c12;
+    color: #e74c3c;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+#itinerary-management,
+#incident-alerts,
+#risk-management,
+#insurance-info {
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#chatbot-container {
+    margin-top: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#chatbox {
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#user-input {
+    width: calc(100% - 100px);
+    padding: 10px;
+    font-size: 16px;
+}
+
+#send-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Animation for dynamic elements */
+#location-info,
+#weather-info,
+#nearby-locations {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Hidden class for elements */
+.hidden {
+    display: none;
+}
